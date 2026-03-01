@@ -1,3 +1,9 @@
 function switchMode(cssFile, jsFile) {
-    console.log(cssFile, jsFile);
+    document.getElementById("theme").href = cssFile;
+
+    const oldScript = document.getElementById("logic");
+    const newScript = document.createElement("script");
+    newScript.src = jsFile;
+    newScript.id = "logic";
+    oldScript.replaceWith(newScript);
 }
