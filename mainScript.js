@@ -27,8 +27,15 @@ function addButtons_CSCI_2050U() {
     exam.onclick = function() {
         alert("You clicked the button for the exam for this course!");
     };
+    //back    
+    const back = document.createElement("button");
+    back.textContent = "Back";
+    back.onclick = function() {
+        switchMode("mainStyle.css", "mainScript.js");
+    };
     // Add them to the page
     container.appendChild(midterm);
     container.appendChild(exam);
+    container.appendChild(back);
 
 }
