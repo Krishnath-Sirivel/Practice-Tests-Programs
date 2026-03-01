@@ -1,3 +1,6 @@
+document.getElementById("mainHeading").innerHTML = "Practice Tests";
+document.getElementById("mainText").innerHTML = "There are many buttons below. Click on any button according to your program and start the test!";
+
 //changes the css and js file that the html file is using
 function switchMode(cssFile, jsFile) {
     document.getElementById("theme").href = cssFile;
