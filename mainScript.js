@@ -1,3 +1,4 @@
+//changes the css and js file that the html file is using
 function switchMode(cssFile, jsFile) {
     document.getElementById("theme").href = cssFile;
 
@@ -6,4 +7,7 @@ function switchMode(cssFile, jsFile) {
     newScript.src = jsFile;
     newScript.id = "logic";
     oldScript.replaceWith(newScript);
+}
+function hideButton(btn) {
+    btn.style.display = "none";
 }
