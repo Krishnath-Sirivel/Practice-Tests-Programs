@@ -35,6 +35,12 @@ function addButtons_CSCI_2050U() {
     back.textContent = "Back";
     back.onclick = function() {
         switchMode("mainStyle.css", "mainScript.js");
+        //hide midterm button
+        hideButton(midterm);
+        //hide exam button
+        hideButton(exam);
+        //hide back button
+        hideButton(this);
     };
     // Add them to the page
     container.appendChild(midterm);
